@@ -4,13 +4,29 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="app.css">
-        <title>Jokes</title>
-        <script src="https://unpkg.com/sv443-joke-api@0.0.8/web/index.js"></script>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <title>Weather App</title>
         <script defer src="app.js"></script>
     </head>
 
     <body>
+        <div class="card">
+            <div class="search">
+                <input type="text" class="search-bar" placeholder="search">
+                <button style="font-size: 12px;">Search</button>
+            </div>
+            <div class="weather">
+                <h2 class="city">Weather in Phoenix</h2>
+                <h1 class="temp">110° F</h1>
+                <img src="https://openweathermap.org/img/wn/01n.png" alt="" class="icon" />
+                <div class="weather-description">Sunny</div>
+                <div class="wind">Wind Speed: 3mph SE</div>
+            </div>
+        </div>
+
     </body>
 
 </html>
