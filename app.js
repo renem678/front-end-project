@@ -77,3 +77,4 @@ document.querySelector(".forecast-button").addEventListener("click", function ()
     forecast.search();
 })
 
+console.log(forecastList)
