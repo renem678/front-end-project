@@ -1,6 +1,5 @@
-
 let weather = {
-    apiKey: "",
+    apiKey: "ad0e698787f364b65657e5970560ef51",
     fetchWeather: function (city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q="
             + city
@@ -24,8 +23,8 @@ let weather = {
         document.querySelector(".weather-description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
-        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
-            ;
+        // document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
+        ;
     },
 };
 let forecast = {
@@ -44,21 +43,24 @@ let forecast = {
         this.fetchForecast(document.querySelector(".search-bar").value);
     },
     getForecast: function (data) {
-        forecastList = data.list;
+        var forecastList = data.list;
+
 
         for (var i = 0; i < forecastList; i++) {
+
+            const { fday } = forecastList[i].data
             const { description } = forecastList[i].weather.description;
             const { temp } = forecastList[i].weather.main;
             const { speed } = forecastList[i].weather.wind;
 
+            document.querySelector(".fday").innerText = "5 Day Forecast"
             document.querySelector(".description").innerText = description;
-            data.list.append(".description")
             document.querySelector(".tempature").innerText = temp + "°F";
-            data.list.append(".tempature")
             document.querySelector(".windS").innerText = "Wind Speed: " + speed + " mph";
-            data.list.append(".windS")
-            console.log()
+
+
         }
+        console.log(forecastList)
     },
 };
 
