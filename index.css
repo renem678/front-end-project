@@ -16,7 +16,11 @@ body {
     width: auto;
     max-width: 400px;
     margin: auto;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: inherit;
+    position: absolute;
+    top: 1%;
+    opacity: 80%;
+
 
 }
 
@@ -24,6 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: inherit;
 }
 
 button {
@@ -33,6 +38,8 @@ button {
     height: 50px;
     width: 50px;
     background: whitesmoke;
+    font-family: inherit;
+    display: inline-block;
 }
 
 
@@ -45,5 +52,29 @@ input.search-bar {
     font-family: inherit;
     font-size: 100%;
     opacity: none;
+    color: rgb(6, 6, 6);
+}
+
+.card1 {
+    background: slategray;
+    padding: 1em;
+    border-radius: 20px;
+    width: 380px;
+    max-width: 400px;
+    margin: auto;
+    font-family: inherit;
+    position: absolute;
+    bottom: 1%;
+}
+
+.forecast-button {
+    margin-top: 300px;
+    border: none;
+    outline: none;
+    padding: 1em;
+    bottom: 10%;
+    border-radius: 25px;
+    background: whitesmoke;
+    font-family: inherit;
     color: rgb(6, 6, 6);
 }
