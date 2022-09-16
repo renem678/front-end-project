@@ -23,8 +23,7 @@ let weather = {
         document.querySelector(".weather-description").innerText = description;
         document.querySelector(".temp").innerText = temp + "°F";
         document.querySelector(".wind").innerText = "Wind Speed: " + speed + " mph";
-        // document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')"
-        ;
+        document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + name + "')";
     },
 };
 let forecast = {
@@ -47,6 +46,7 @@ let forecast = {
 
 
         for (var i = 0; i < forecastList; i++) {
+
 
             const { fday } = forecastList[i].data
             const { description } = forecastList[i].weather.description;

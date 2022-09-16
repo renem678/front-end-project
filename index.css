@@ -18,9 +18,8 @@ body {
     margin: auto;
     font-family: inherit;
     position: absolute;
-    top: 1%;
-    opacity: 80%;
-
+    top: 10%;
+    opacity: 85%;
 
 }
 
@@ -55,7 +54,7 @@ input.search-bar {
     color: rgb(6, 6, 6);
 }
 
-.card1 {
+.card-1 {
     background: slategray;
     padding: 1em;
     border-radius: 20px;
@@ -64,17 +63,20 @@ input.search-bar {
     margin: auto;
     font-family: inherit;
     position: absolute;
-    bottom: 1%;
+    bottom: 5%;
+    opacity: 85%;
+
+
 }
 
 .forecast-button {
-    margin-top: 300px;
+    margin: .5em;
+    border-radius: 50%;
     border: none;
-    outline: none;
-    padding: 1em;
-    bottom: 10%;
-    border-radius: 25px;
+    height: 50px;
+    width: 62px;
     background: whitesmoke;
     font-family: inherit;
-    color: rgb(6, 6, 6);
+    display: inline-block;
+    text-align: center;
 }
